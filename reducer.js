@@ -16,6 +16,10 @@ class Store(updateState, state) {
 		this._updateState = updateState;
 	}
 
+	update(action) {
+		this._state = this._updateState(this.state, action);
+	}
+
 }
 
 let store = new Store(updateState, 0);
