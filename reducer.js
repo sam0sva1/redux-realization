@@ -9,3 +9,12 @@ function updateState(state, action) {
 		return state;
 	}
 }
+
+state = updateState(state, 'INCREMENT');
+console.log(state);
+
+state = updateState(state, 'DECREMENT');
+console.log(state);
+
+state = updateState(state, 'NOTHING');
+console.log(state);
